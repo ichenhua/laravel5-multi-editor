@@ -1,0 +1,29 @@
+{
+    "name": "chenhua/laravel5-multi-editor",
+    "description": "The best multi editor of Laravel 5",
+    "keywords": ["laravel", "editor", "kindeditor"],
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "homepage": "http://www.ichenhua.cn",
+    "authors": [
+        {
+            "name": "chenhua",
+            "email": "276004561@qq.com"
+        }
+    ],
+    "require": {
+        "chenhua/laravel5-file-upload": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chenhua\\MultiEditor\\" : "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chenhua\\MultiEditor\\MultiEditorServiceProvider"
+            ],
+        }
+    }
+}
