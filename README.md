@@ -30,7 +30,7 @@ require: {
 composer require chenhua/laravel5-multi-editor
 ```
 
-2、完成上面的操作后，修改 `config/app.php` 中 `providers` 数组
+2、完成上面的操作后，修改 `config/app.php` 中 `providers` 数组（laravel5.5及以上忽略）
 
 ```php
 Chenhua\MultiEditor\MultiEditorServiceProvider::class,
@@ -40,6 +40,7 @@ Chenhua\MultiEditor\MultiEditorServiceProvider::class,
 
 ```bash
 php artisan vendor:publish --tag=multi_editor
+php artisan vendor:publish --tag=file_upload
 ```
 
 ## 使用方法
@@ -62,9 +63,13 @@ php artisan vendor:publish --tag=multi_editor
 ② Summernote 编辑器
 
 ```html
-<textarea id="editor">sdfdsfd</textarea>
+<textarea id="editor">
+Html内容
+</textarea>
 @include('editor::summernote',['editor'=>'#editor'])
 ```
+
+
 
 ### 效果展示
 

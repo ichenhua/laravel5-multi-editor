@@ -43,7 +43,7 @@
                     }else{
                         $("#thumbBtn").removeClass('hidden');
                         $("#thumbImg").attr("src", response.data.url);
-                        $("#thumbInp").val(response.data.url);
+                        $("{{$target_input}}").val(response.data.url);
                     }
                 }else{
                     alert("未知错误.",{icon:5});
