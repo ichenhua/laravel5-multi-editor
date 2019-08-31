@@ -24,7 +24,7 @@
             var formData = new FormData();
             formData.append("file", file);
             $.ajax({
-                url: "{{route('file.upload')}}?section=default",//自定义图片上传路径
+                url: "{{route('file.upload')}}?section={{$section or 'default'}}",//自定义图片上传路径
                 data: formData,
                 cache: false,
                 contentType: false,

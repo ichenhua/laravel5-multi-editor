@@ -4,6 +4,7 @@ Laravel5-MultiEditor 是基于 Kindeditor/Summernote 等的富文本在线HTMl�
 
 ## 更新记录
 
+* 2019-08-31 `Release v1.1.0` 修改视图应用 section 参数，主要解决不同场景下，需要上传到不同路径的需求。
 * 2019-02-28 `Release v1.0.0` 完成 KindEditor/Summernote 在线编辑器主程序，且集成本地、七牛、阿里云oss存储。
 
 ## 安装流程

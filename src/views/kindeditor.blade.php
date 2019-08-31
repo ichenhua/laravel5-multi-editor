@@ -3,7 +3,7 @@
 <script>
     KindEditor.ready(function (K) {
         window.editor = K.create('{{$editor}}', {
-            uploadJson: "{{route('file.upload')}}?section=kindeditor",
+            uploadJson: "{{route('file.upload')}}?section={{$section or 'kindeditor'}}",
             //fileManagerJson: '',
             allowFileManager: false,
             formatUploadUrl: false
